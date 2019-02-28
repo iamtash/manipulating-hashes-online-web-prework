@@ -14,7 +14,7 @@ def first_challenge
       favorite_icecream_flavors: ["strawberry", "cookie dough", "mint chip"]
     }
   }
-  binding.pry
+  
   contacts["Freddy Mercury"].each {|field, info| info.delete_if {|flavor| flavor == "strawberry"} if field == :favorite_icecream_flavors}
 
 
